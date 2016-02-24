@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/state_edit_bg">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!--编辑区 -->
+        <EditText
+            android:id="@+id/et_state_topunish"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:gravity="center_horizontal"
+            android:hint="@string/activity_editstate_hint"
+            android:textCursorDrawable="@null"
+            android:background="#7f000000"/>
+        <!--图片区 -->
+        <ImageView
+            android:id="@+id/iv_statepicture"
+			android:layout_gravity="center_horizontal"
+            android:layout_width="120dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+    <!--底部选择栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/state_listitem_bg"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp">
+        <!--相册选择照片 -->
+        <LinearLayout
+            android:id="@+id/ll_pickphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/edit_state_pickphoto" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/activity_editstate_pickphoto"/>
+        </LinearLayout>
+        <!--拍照 -->
+        <LinearLayout
+            android:id="@+id/ll_takephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/edit_state_takephoto" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/activity_editstate_takephoto"/>
+        </LinearLayout>
+        <!--发表 -->
+        <LinearLayout
+            android:id="@+id/ll_state_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/edit_state_send" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/activity_editstate_send"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

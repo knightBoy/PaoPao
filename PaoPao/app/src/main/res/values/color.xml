@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_text_normal">#434343</color>
+    <color name="radiobutton_bg">#848484</color>
+    <color name="radiobutton_textcolor">#535353</color>
+    <color name="radiobutton_click_bg">#646464</color>
+    <color name="menu_text_click">#630B68</color>
+    <color name="state_listitem_bg">#D4D4D4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="menu_icon_click">#630B68</color>
+    <color name="bottle_bg">#E0000000</color>
+    <color name="brain_item_text">#303030</color>
+    <color name="red">#FF0000</color>
+    <color name="send_button_bg">#1571FA</color>
+    <color name="blue">#0000ff</color>
+    <color name="transparent">#00000000</color>
+</resources>

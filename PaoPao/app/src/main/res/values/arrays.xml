@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="brain_type">
+        <item>毁三观</item>
+        <item>鬼故事</item>
+        <item>秀恩爱</item>
+        <item>青春期</item>
+        <item>掉节操</item>
+        <item>装1 3</item>
+        <item>求安慰</item>
+    </string-array>
+</resources>

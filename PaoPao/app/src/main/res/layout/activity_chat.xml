@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/activity_chat_header"/>
+        <include layout="@layout/view_line"/>
+    </LinearLayout>
+
+    <com.example.knightboy.doudou.view.DropdownListView
+        android:id="@+id/message_chat_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@id/top"
+        android:cacheColorHint="@color/transparent"
+        android:background="@drawable/chat_listview_bg"
+        android:divider="@null"
+        android:listSelector="@color/transparent"
+        android:transcriptMode="normal">
+    </com.example.knightboy.doudou.view.DropdownListView>
+
+    <!--底部书写区 -->
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/view_line"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@color/state_listitem_bg">
+            <ImageView
+                android:id="@+id/iv_chat_emoji"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_face_edit"/>
+            <EditText
+                android:id="@+id/et_user_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="12dp"
+                android:padding="5dp"
+                android:layout_toRightOf="@+id/iv_chat_emoji"
+                android:layout_toLeftOf="@+id/tv_send_message"
+                android:background="@drawable/fragment_meet_edittext_bg"/>
+            <TextView
+                android:id="@+id/tv_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/send_button_bg"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                android:text="发送"/>
+        </RelativeLayout>
+        <!--底下是表情 -->
+    </LinearLayout>
+
+</RelativeLayout>

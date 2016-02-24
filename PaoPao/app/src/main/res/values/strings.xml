@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">逗逗</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="state_string">  在你冷酷热情间游走,被侵占所有还要笑着接受,我嫉妒你的爱气势如虹,像个人气高居不下的天后.</string>
+    <string name="brain_string1">一个月黑风高的夜晚，我独自一人走在一条悠长的小路上，周围静悄悄的，没有人。</string>
+    <string name="brain_string2">晚自习后，昏黄的灯光下，独自一人走在下过雨的巷子里。</string>
+    <string name="brain_string3">窗前明月光，疑是地上霜。举头望明月，低头思故乡。</string>
+    <string name="meet_string">有些事，发生了就只能接受，哪怕你接受不了。</string>
+    <string name="comment_string">你在哪个校区，我去接你</string>
+    <string name="chat_you_string">比如衣服什么的</string>
+    <string name="chat_me_string">哦哦，我知道了</string>
+
+    <!--XlistView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <!--activity_main -->
+    <string name="activity_main_menu_msg">消息</string>
+    <string name="activity_main_menu_state">动态</string>
+    <string name="activity_main_menu_meet">遇见</string>
+    <string name="activity_main_menu_brain">脑洞</string>
+    <string name="activity_main_menu_me">我的</string>
+
+    <!--activity_editstate -->
+    <string name="activity_editstate_pickphoto">相册</string>
+    <string name="activity_editstate_takephoto">拍照</string>
+    <string name="activity_editstate_send">发表</string>
+    <string name="activity_editstate_hint">说点事情吧……</string>
+
+    <!--activity_edit_brain -->
+    <string name="activity_editbrain_hint">说出你的故事吧……</string>
+
+    <!--activity_comment -->
+    <string name="activity_comment_detail">动态详情</string>
+    <string name="activity_comment_edit_hint">输入评论</string>
+    <string name="activity_comment_comment">评论</string>
+
+    <!--activity_login -->
+    <string name="activity_login_account">请输入账号</string>
+    <string name="activity_login_password">请输入密码</string>
+    <string name="activity_login_register">注册</string>
+    <string name="activity_login_login">登录</string>
+
+    <!--activity_register -->
+    <string name="activity_register_nickName">输入昵称 如:小明</string>
+    <string name="activity_register_psw">输入密码</string>
+    <string name="activity_register_confirepsw">确认密码</string>
+    <string name="activity_register_age">输入生日 如:19950504</string>
+    <string name="activity_register_boy">男生</string>
+    <string name="activity_register_girl">女生</string>
+    <string name="activity_register_legal">点击查看《用户协议》</string>
+    <string name="activity_register_registerOk">同意用户协议并注册</string>
+
+    <!--activity_userinfo -->
+    <string name="activity_userinfo_userspace">用户空间</string>
+
+    <!--activity_chat -->
+    <string name="activity_chat_userName">王小明</string>
+    
+    <!--fragment_message -->
+    <string name="fragment_message_arrounding">附近</string>
+    <string name="fragment_message_message">聊天</string>
+    <string name="fragment_message_nomessage">最近没有聊天记录</string>
+
+    <!--fragment_me -->
+    <string name="fragment_me_me">我的</string>
+    <string name="fragment_me_info">资料</string>
+    <string name="fragment_me_setting">设置</string>
+    <string name="fragment_me_mystate">我发布的</string>
+    <string name="fragment_me_stateAlarm">动态提醒</string>
+    <string name="fragment_me_onselfSetting">个性设置</string>
+    <string name="fragment_me_emoji">表情商城</string>
+    <string name="fragment_me_help">帮助</string>
+    <string name="fragment_me_share">分享</string>
+
+    <!--fragment_state -->
+    <string name="fragment_state_state">动态</string>
+    <string name="fragment_state_select">筛选</string>
+
+    <!--fragment_brain -->
+    <string name="fragment_brain_brain">脑洞</string>
+    <string name="fragment_brain_from">来自</string>
+    <string name="fragment_brain_calllz">呼叫</string>
+    <string name="fragment_brain_reply">续写</string>
+    <string name="fragment_brain_new">最新</string>
+    <string name="fragment_brain_old">往期</string>
+    <string name="fragment_brain_best">最佳</string>
+    <string name="fragment_brain_type">类型</string>
+
+    <!--fragment_meet -->
+    <string name="fragment_meet_meet">遇见</string>
+    <string name="fragment_meet_test">缘分指数:</string>
+    <string name="fragment_meet_throw">扔掉</string>
+    <string name="fragment_meet_throwone">扔一个</string>
+    <string name="fragment_meet_getone">捞一个</string>
+    <string name="fragment_meet_mine">我的瓶子</string>
+    <string name="fragment_meet_hint">请输入1~20的解锁密码</string>
+    <string name="fragment_meet_submit">试试缘分</string>
+    <string name="fragment_meet_info">输入解锁密码进行匹配吧!</string>
+
+    <!--error info -->
+    <string name="text_too_short">不能少于五个字</string>
+</resources>

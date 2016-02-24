@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="13dp"
+    android:paddingBottom="13dp"
+    android:paddingLeft="9dp"
+    android:paddingRight="9dp"
+    android:background="#e0e0e0">
+    <!--返回 -->
+    <ImageView
+        android:id="@+id/iv_userinfo_back"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_comment_return"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_userinfo_userspace"
+        style="@style/fragment_header_center"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/iv_more_info"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@drawable/icon_comment_add_friend"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"
+        style="@style/fragment_header_left"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

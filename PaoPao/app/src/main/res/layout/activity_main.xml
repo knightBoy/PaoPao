@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--顶部内容布局 -->
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/frameMenu"
+        android:layout_alignParentTop="true" >
+        <fragment
+            android:id="@+id/fragment_message"
+            android:name="com.example.knightboy.doudou.fragment.MessageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <fragment
+            android:id="@+id/fragment_state"
+            android:name="com.example.knightboy.doudou.fragment.StateFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <fragment
+            android:id="@+id/fragment_meet"
+            android:name="com.example.knightboy.doudou.fragment.MeetFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <fragment
+            android:id="@+id/fragment_brain"
+            android:name="com.example.knightboy.doudou.fragment.BrainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <fragment
+            android:id="@+id/fragment_me"
+            android:name="com.example.knightboy.doudou.fragment.MeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!--底部菜单 -->
+    <LinearLayout
+        android:id="@+id/frameMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#e0e0e0"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!--消息按钮 -->
+        <RelativeLayout style="@style/ButtomBar"
+            android:id="@+id/rl_message">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/iv_message"
+                        style="@style/ButtomBarImgBtn"
+                        android:background="@drawable/menu_message_bg" />
+                    <TextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="@string/activity_main_menu_msg"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_msgnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:background="#FF0000"
+                    android:gravity="center" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!--动态按钮 -->
+        <RelativeLayout style="@style/ButtomBar"
+            android:id="@+id/rl_state">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_state"
+                    android:layout_centerInParent="true"
+                    style="@style/ButtomBarImgBtn"
+                    android:background="@drawable/menu_state_bg" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/activity_main_menu_state"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--偶遇按钮 -->
+        <RelativeLayout style="@style/ButtomBar"
+            android:id="@+id/rl_meet">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_meet"
+                    android:layout_centerInParent="true"
+                    style="@style/ButtomBarImgBtn"
+                    android:background="@drawable/menu_meet_bg" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/activity_main_menu_meet"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--脑洞按钮 -->
+        <RelativeLayout style="@style/ButtomBar"
+            android:id="@+id/rl_brain">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_brain"
+                    android:layout_centerInParent="true"
+                    style="@style/ButtomBarImgBtn"
+                    android:background="@drawable/menu_brain_bg" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/activity_main_menu_brain"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--我的按钮 -->
+        <RelativeLayout style="@style/ButtomBar"
+            android:id="@+id/rl_me">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_me"
+                    android:layout_centerInParent="true"
+                    style="@style/ButtomBarImgBtn"
+                    android:background="@drawable/menu_me_bg"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/activity_main_menu_me"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
