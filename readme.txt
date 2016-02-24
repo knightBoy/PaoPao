@@ -1,2 +1,4 @@
-Git is a distributed version control system.
-Git is free software distributed under the GPL.
+泡泡，基于地理位置的趣味性交友APP。
+开发人员：knightBoy
+最后更新：2015年10月
+版权所有，盗窃必究。
